@@ -1,0 +1,126 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #Da1884;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 300px;
+    margin-right: 700px; /* Adjust margin */
+}
+
+.small-picture {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 500px; /* Adjust width */
+    height: auto;
+    margin-right: 200px; /* Adjust margin */
+    padding: 20px; /* Adjust padding */
+}
+
+/* Additional styles for smaller screens */
+@media (max-width: 500px) {
+    .container {
+        width: 500px; /* Adjust width */
+        margin-left: 45%;
+        margin-top: 50%;
+        padding: 100px;
+    }
+
+    .small-picture {
+        width: 50%; /* Make the image responsive */
+        margin-left: 100%;
+        padding: 20px;
+    }
+
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    margin-top: 10px;
+    color: #555;
+}
+
+input {
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #932a2a;
+    border-radius: 4px;
+    padding-right: 70px;
+}
+
+.password-container {
+    padding: 1px;
+}
+
+button {
+    background-color: #da0975;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 70%;
+    margin-left: 50px;
+}
+
+button:hover {
+    background-color: #ff0080;
+}
+
+/* style for the password toggle */
+.password-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #666;
+    font-size: 14px;
+}
+
+.toggle-password:hover {
+    color: #333;
+}
+
+.lower-section p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .lower-section a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .lower-section a:hover {
+    background-color: #ff1493;
+  }
